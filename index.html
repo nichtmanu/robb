@@ -16,7 +16,15 @@
             background-color: #411d31;
             color: white;
             padding: 20px;
-            text-align: center;
+            text-align: left; /* Text ausrichten, damit Logo und Überschrift nebeneinander erscheinen */
+            display: flex;
+            align-items: center; /* Vertikal ausrichten */
+        }
+        
+        header .logo {
+            width: 40px; /* Größe des Logos */
+            height: auto;
+            margin-right: 15px; /* Abstand zwischen Logo und Text */
         }
         main {
             padding: 20px;
@@ -70,9 +78,11 @@
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Robb's Adventure Logo" class="logo">
         <h1>Robb's Adventure: Achtsamkeit durch Storytelling</h1>
         <p>Erlebe, wie der kleine Dino Robb durch Storytelling und Gamification den Weg zu mentaler Gesundheit meistert.</p>
     </header>
+
     <main>
         <h2>Worum geht es?</h2>
         <p>Psychische Belastungen sind eine Herausforderung, besonders für junge Erwachsene. Klassische Ansätze wie Meditation und Achtsamkeit helfen, doch oft fehlt das langfristige Engagement. Meine App verbindet wissenschaftlich fundierte Achtsamkeitsübungen mit einer motivierenden Geschichte, um Stressprävention greifbar und spannend zu machen.</p>
@@ -93,7 +103,7 @@
             </form>
         </div>
         <h2>Hast du Fragen?</h2>
-        <p>Du erreichst mich per Mail oder per Whatsapp:</p>
+        <p>Schreib mich einfach an!</p>
         <p><strong>E-Mail:</strong> <a href="mailto:robbsadventure@web.de">robbsadventure@web.de</a></p>
         <p><strong>WhatsApp:</strong> <a href="https://wa.me/4915225307729" target="_blank">01522 5307729</a></p>
     </main>
