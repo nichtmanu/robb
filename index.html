@@ -17,19 +17,22 @@
             color: white;
             padding: 20px;
             display: flex;
-            align-items: center; /* Vertikal ausrichten */
-            justify-content: center; /* Elemente horizontal in der Mitte ausrichten */
-            text-align: left; /* Den Text innerhalb der header-text div nach links ausrichten */
+            align-items: stretch; /* Sorgt dafür, dass die Höhe des Logos und der Text denselben Bereich einnehmen */
+            justify-content: center; /* Zentriert die Inhalte horizontal */
+            text-align: left; /* Text innerhalb von .header-text nach links ausrichten */
         }
         
         header .logo {
-            width: 40px; /* Größe des Logos */
-            height: auto;
+            width: auto; /* Breite wird automatisch angepasst */
+            height: 100%; /* Logo nimmt die gleiche Höhe wie der gesamte Header-Inhalt */
             margin-right: 15px; /* Abstand zwischen Logo und Text */
         }
         
         header .header-text {
-            display: block; /* Damit der Text unter der Überschrift bleibt */
+            display: block;
+            display: flex;
+            flex-direction: column; /* Text soll vertikal gestapelt werden */
+            justify-content: center; /* Stellt sicher, dass der Text mittig ausgerichtet ist */
         }
         
         header h1 {
