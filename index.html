@@ -16,15 +16,27 @@
             background-color: #411d31;
             color: white;
             padding: 20px;
-            text-align: left; /* Text ausrichten, damit Logo und Überschrift nebeneinander erscheinen */
             display: flex;
             align-items: center; /* Vertikal ausrichten */
+            justify-content: flex-start; /* Links ausrichten */
         }
         
         header .logo {
             width: 40px; /* Größe des Logos */
             height: auto;
             margin-right: 15px; /* Abstand zwischen Logo und Text */
+        }
+        
+        header .header-text {
+            display: block; /* Damit der Text darunter angezeigt wird */
+        }
+        
+        header h1 {
+            margin: 0; /* Entfern die Standard-Abstände der h1 */
+        }
+        
+        header p {
+            margin: 5px 0 0 0; /* Etwas Abstand zum oberen Rand */
         }
         main {
             padding: 20px;
@@ -79,9 +91,12 @@
 <body>
     <header>
         <img src="Robb.png" alt="Robb's Adventure Logo" class="logo">
-        <h1>Robb's Adventure: Achtsamkeit durch Storytelling</h1>
-        <p>Erlebe, wie der kleine Dino Robb durch Storytelling und Gamification den Weg zu mentaler Gesundheit meistert.</p>
+        <div class="header-text">
+            <h1>Robb's Adventure: Achtsamkeit durch Storytelling</h1>
+            <p>Erlebe, wie der kleine Dino Robb durch Storytelling und Gamification den Weg zu mentaler Gesundheit meistert.</p>
+        </div>
     </header>
+
 
     <main>
         <h2>Worum geht es?</h2>
